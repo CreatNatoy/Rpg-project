@@ -10,8 +10,6 @@ public class Mover : MonoBehaviour
     [SerializeField] private Transform _target;
 
     private NavMeshAgent _navMeshAgent;
-    private Ray _ray; // луч (ничанающий от точки, и идущиее в направление бесконечно)
-    private RaycastHit _hit; // информаци€ получана€ из луча
 
     private void Start()
     {
@@ -19,27 +17,13 @@ public class Mover : MonoBehaviour
     }
 
     private void Update()
-    {
-        if(Input.GetMouseButton(0))
-        {
-            MoveToCursor();
-        }
-        
+    {   
         UpdateAnimator();
     }
 
-    private void MoveToCursor()
+    public void MoveTo(Vector3 destination)
     {
-        //  Input.mousePosition  сообщает положение мыши
-        //  Camera.main.ScreenPointToRay()   ¬озвращает луч, идущий от камеры через точку на экране.
-        _ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //  Debug.DrawRay(_lastRay.origin, _lastRay.direction * 100);
-        //  Physics.Raycast() ¬озвращает истину, если луч пересекает коллайдер, в противном случае - ложь.
-        bool hasHit = Physics.Raycast(_ray, out _hit); 
-        if(hasHit)
-        {
-            _navMeshAgent.destination = _hit.point;
-        }
+        GetComponent<NavMeshAgent>().destination = destination;
     }
 
     private void UpdateAnimator()
