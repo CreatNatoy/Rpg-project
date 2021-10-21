@@ -1,7 +1,10 @@
 using UnityEngine;
+using RPG.Movement;
 
-public class PlayerController : MonoBehaviour
-{
+namespace RPG.Control
+{    
+    public class PlayerController : MonoBehaviour
+    {
     private Mover _mover;
 
     private void Start()
@@ -17,12 +20,8 @@ public class PlayerController : MonoBehaviour
 
     private void MoveToCursor()
     {
-        //  Input.mousePosition  сообщает положение мыши
-        //  Camera.main.ScreenPointToRay()   ¬озвращает луч, идущий от камеры через точку на экране.
-        Ray _ray = Camera.main.ScreenPointToRay(Input.mousePosition); // луч (ничанающий от точки, и идущиее в направление бесконечно)
-        RaycastHit _hit; // информаци€ получана€ из луча
-        //  Debug.DrawRay(_lastRay.origin, _lastRay.direction * 100);
-        //  Physics.Raycast() ¬озвращает истину, если луч пересекает коллайдер, в противном случае - ложь.
+        Ray _ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+        RaycastHit _hit;
         bool hasHit = Physics.Raycast(_ray, out _hit);
         if (hasHit)
         {
@@ -31,4 +30,5 @@ public class PlayerController : MonoBehaviour
     }
 
 
+    }
 }

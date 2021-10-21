@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.AI; 
 
 
+namespace RPG.Movement
+{
 [RequireComponent(typeof(NavMeshAgent))]
 public class Mover : MonoBehaviour
 {
@@ -28,10 +30,11 @@ public class Mover : MonoBehaviour
 
     private void UpdateAnimator()
     {
-        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;  //получаем скорость 
-        //transform.InverseTransformDirection()  переобразование из мирового пространство в локальное пространство  
+        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;  //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ 
+        //transform.InverseTransformDirection()  пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ  
         Vector3 localVelocity = transform.InverseTransformDirection(velocity); 
         float speed = localVelocity.z;
         GetComponent<Animator>().SetFloat("Blend", speed); 
     }
+}
 }
