@@ -23,14 +23,20 @@ public class Mover : MonoBehaviour
         UpdateAnimator();
     }
 
+    public void Stop()
+    {
+        _navMeshAgent.isStopped = true;
+    }
+
     public void MoveTo(Vector3 destination)
     {
-        GetComponent<NavMeshAgent>().destination = destination;
+        _navMeshAgent.destination = destination;
+        _navMeshAgent.isStopped = false;
     }
 
     private void UpdateAnimator()
     {
-        Vector3 velocity = GetComponent<NavMeshAgent>().velocity;  //�������� �������� 
+        Vector3 velocity = _navMeshAgent.velocity;  //�������� �������� 
         //transform.InverseTransformDirection()  ��������������� �� �������� ������������ � ��������� ������������  
         Vector3 localVelocity = transform.InverseTransformDirection(velocity); 
         float speed = localVelocity.z;
