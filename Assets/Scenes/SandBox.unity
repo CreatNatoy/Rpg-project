@@ -995,6 +995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weaponRange: 2
+  _timeBetweenAttacks: 1
 --- !u!4 &1045654480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 712882913374327647, guid: bc58f89aca12f6e4aa78d58cebc5fabd, type: 3}
@@ -1435,6 +1436,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 413494, guid: c2849fd453abd0445a702a035f04ac60, type: 3}
   m_PrefabInstance: {fileID: 2075029256}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2094411073 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5660219634507023930, guid: bc02be1760e6f904bbafdc2595129f43, type: 3}
+  m_PrefabInstance: {fileID: 4240645467221821985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2094411074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094411073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca27ec025a293640ab30439ef00e6c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
 --- !u!1001 &296104752383131264
 PrefabInstance:
   m_ObjectHideFlags: 0
