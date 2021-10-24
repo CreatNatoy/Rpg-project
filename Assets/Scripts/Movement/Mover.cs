@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using RPG.Core;
 using UnityEngine;
 using UnityEngine.AI; 
 
@@ -7,15 +6,17 @@ using UnityEngine.AI;
 namespace RPG.Movement
 {
 [RequireComponent(typeof(NavMeshAgent))]
-public class Mover : MonoBehaviour
+public class Mover : MonoBehaviour, IAction
 {
     [SerializeField] private Transform _target;
 
     private NavMeshAgent _navMeshAgent;
+    private ActionScheduler _action;
 
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>(); 
+        _action = GetComponent<ActionScheduler>();
     }
 
     private void Update()
@@ -23,7 +24,13 @@ public class Mover : MonoBehaviour
         UpdateAnimator();
     }
 
-    public void Stop()
+    public void StartMoveAction(Vector3 destination)
+    {
+        _action.StartAction(this);
+        MoveTo(destination);
+    }
+
+    public void Cancel()
     {
         _navMeshAgent.isStopped = true;
     }

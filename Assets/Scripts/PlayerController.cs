@@ -44,7 +44,7 @@ namespace RPG.Control
             if (hasHit)
             {
                 if (Input.GetMouseButton(0))
-                    _mover.MoveTo(_hit.point);
+                    _mover.StartMoveAction(_hit.point);
                 return true;
             }
             return false;
