@@ -8,6 +8,8 @@ namespace RPG.Combat
         private Animator _animator;
         private bool isDead = false;
 
+        public bool IsDead() { return isDead; }
+
         private void Start()
         {
             _animator = GetComponent<Animator>();
