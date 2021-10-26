@@ -12,15 +12,18 @@ public class Mover : MonoBehaviour, IAction
 
     private NavMeshAgent _navMeshAgent;
     private ActionScheduler _action;
+        private Health _health; 
 
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>(); 
         _action = GetComponent<ActionScheduler>();
+        _health = GetComponent<Health>(); 
     }
 
     private void Update()
-    {   
+    {
+        _navMeshAgent.enabled = !_health.IsDead(); 
         UpdateAnimator();
     }
 
