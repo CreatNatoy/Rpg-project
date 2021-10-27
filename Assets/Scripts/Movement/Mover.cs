@@ -46,8 +46,7 @@ public class Mover : MonoBehaviour, IAction
 
     private void UpdateAnimator()
     {
-        Vector3 velocity = _navMeshAgent.velocity;  //�������� �������� 
-        //transform.InverseTransformDirection()  ��������������� �� �������� ������������ � ��������� ������������  
+        Vector3 velocity = _navMeshAgent.velocity;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity); 
         float speed = localVelocity.z;
         GetComponent<Animator>().SetFloat("Blend", speed); 
