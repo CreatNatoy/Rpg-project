@@ -1,0 +1,56 @@
+From 08dfa464a8aec8c0e48eb8c909bdcb540b3efd94 Mon Sep 17 00:00:00 2001
+From: Mykola Kalchuk <ul0250896@edu.uni.lodz.pl>
+Date: Tue, 19 Oct 2021 22:02:56 +0300
+Subject: [PATCH] - new git test;  - created test.cs;
+
+---
+ Assets/Scripts/test.cs      | 18 ++++++++++++++++++
+ Assets/Scripts/test.cs.meta | 11 +++++++++++
+ 2 files changed, 29 insertions(+)
+ create mode 100644 Assets/Scripts/test.cs
+ create mode 100644 Assets/Scripts/test.cs.meta
+
+diff --git a/Assets/Scripts/test.cs b/Assets/Scripts/test.cs
+new file mode 100644
+index 0000000..6e5ad37
+--- /dev/null
++++ b/Assets/Scripts/test.cs
+@@ -0,0 +1,18 @@
++using System.Collections;
++using System.Collections.Generic;
++using UnityEngine;
++
++public class test : MonoBehaviour
++{
++    // Start is called before the first frame update
++    void Start()
++    {
++        
++    }
++
++    // Update is called once per frame
++    void Update()
++    {
++        
++    }
++}
+diff --git a/Assets/Scripts/test.cs.meta b/Assets/Scripts/test.cs.meta
+new file mode 100644
+index 0000000..0eda8f7
+--- /dev/null
++++ b/Assets/Scripts/test.cs.meta
+@@ -0,0 +1,11 @@
++fileFormatVersion: 2
++guid: 446ce1ae0b9dc2c4fa90cf5484ffef02
++MonoImporter:
++  externalObjects: {}
++  serializedVersion: 2
++  defaultReferences: []
++  executionOrder: 0
++  icon: {instanceID: 0}
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 
+-- 
+2.31.1.windows.1
+
