@@ -12,15 +12,18 @@ public class Mover : MonoBehaviour, IAction
 
     private NavMeshAgent _navMeshAgent;
     private ActionScheduler _action;
+        private Health _health; 
 
     private void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>(); 
         _action = GetComponent<ActionScheduler>();
+        _health = GetComponent<Health>(); 
     }
 
     private void Update()
-    {   
+    {
+        _navMeshAgent.enabled = !_health.IsDead(); 
         UpdateAnimator();
     }
 
@@ -43,8 +46,7 @@ public class Mover : MonoBehaviour, IAction
 
     private void UpdateAnimator()
     {
-        Vector3 velocity = _navMeshAgent.velocity;  //�������� �������� 
-        //transform.InverseTransformDirection()  ��������������� �� �������� ������������ � ��������� ������������  
+        Vector3 velocity = _navMeshAgent.velocity;
         Vector3 localVelocity = transform.InverseTransformDirection(velocity); 
         float speed = localVelocity.z;
         GetComponent<Animator>().SetFloat("Blend", speed); 
