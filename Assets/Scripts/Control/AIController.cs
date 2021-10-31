@@ -14,7 +14,9 @@ namespace RPG.Control
         [SerializeField] private float _suspicionTime = 3f;
         [SerializeField] private PatrolPath _patrolPath;
         [SerializeField] private float _wayPointToLerance = 1f;
-        [SerializeField] private float _wayPointDwellTime = 3f; 
+        [SerializeField] private float _wayPointDwellTime = 3f;
+        [Range(0,1)]
+        [SerializeField] private float _patrolSpeedFraction = 0.2f; 
 
         private GameObject _player;
         private Health _health;
@@ -30,7 +32,7 @@ namespace RPG.Control
         {
             _fighter = GetComponent<Fighter>();
             _health = GetComponent<Health>();
-            _mover = GetComponent<Mover>(); 
+            _mover = GetComponent<Mover>();
             _player = GameObject.FindWithTag("Player");
             _guardPosition = transform.position; 
 
@@ -78,7 +80,7 @@ namespace RPG.Control
             }
             if (_timeArrivedAtWayPoint > _wayPointDwellTime)
             {
-                _mover.StartMoveAction(nextPosition);
+                _mover.StartMoveAction(nextPosition, _patrolSpeedFraction);
             }
         }
 
