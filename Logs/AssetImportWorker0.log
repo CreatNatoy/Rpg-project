@@ -176,3 +176,4 @@ Received Import Request.
 Start importing Assets/Vlad using Guid(de3f4b9fcd668704486c2dda77b66954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36d00138d4e931e344b55b8ca094dd47') in 0.003687 seconds 
   Import took 0.008602 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
