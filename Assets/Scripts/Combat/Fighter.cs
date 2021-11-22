@@ -10,7 +10,7 @@ namespace RPG.Combat
         [SerializeField] private float _timeBetweenAttacks = 1f;
         [SerializeField] private float _weaponDamage = 2f;
         private Health _target;
-        float _timeSinceLastAttack = Mathf.Infinity; /* Сразу наносил урон без задержки */ 
+        float _timeSinceLastAttack = Mathf.Infinity; /* Г‘Г°Г Г§Гі Г­Г Г­Г®Г±ГЁГ« ГіГ°Г®Г­ ГЎГҐГ§ Г§Г Г¤ГҐГ°Г¦ГЄГЁ */ 
         private Mover _mover;
         private Animator _animator;
         private ActionScheduler _action;
