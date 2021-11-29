@@ -33,8 +33,8 @@ namespace RPG.Core
             if(isDead) return;
 
             isDead = true;
-            _animator.SetTrigger("Die");
-            _actionScheduler.CancelCurrentAction(); 
+            GetComponent<Animator>().SetTrigger("Die");
+            GetComponent<ActionScheduler>().CancelCurrentAction();
         }
 
         public object CaptureState()

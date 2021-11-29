@@ -1,5 +1,6 @@
 using System.Collections;
 using RPG.SceneManagement;
+using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -40,7 +41,6 @@ namespace RPG.SceneManagment
 
             SavingWrapper wrapper = FindObjectOfType<SavingWrapper>();
             wrapper.Save();
-
             yield return SceneManager.LoadSceneAsync(_sceneToLoad);
 
             wrapper.Load();
@@ -72,6 +72,7 @@ namespace RPG.SceneManagment
             GameObject player = GameObject.FindWithTag("Player");
             player.GetComponent<NavMeshAgent>().enabled = false;
             player.GetComponent<NavMeshAgent>().Warp(otherPortal._spawnPoint.position);
+            //player.transform.position = otherPortal._spawnPoint.position;
             player.transform.rotation = otherPortal._spawnPoint.rotation;
             player.GetComponent<NavMeshAgent>().enabled = true;
 
