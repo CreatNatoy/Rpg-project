@@ -33,6 +33,26 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f5c7eacb921e944d8f9421806da3890, type: 2}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f5c7eacb921e944d8f9421806da3890, type: 2}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _handTransform
+      value: 
+      objectReference: {fileID: 8330558758327876285}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _leftHandTransform
+      value: 
+      objectReference: {fileID: 8330558758327933653}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _rightHandTransform
+      value: 
+      objectReference: {fileID: 8330558758327876285}
     - target: {fileID: 3534718815213135933, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -95,5 +115,15 @@ PrefabInstance:
 --- !u!1 &1472069329702653627 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9181211710317515717, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+  m_PrefabInstance: {fileID: 7712379355750292862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8330558758327933653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1773282613132953515, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+  m_PrefabInstance: {fileID: 7712379355750292862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8330558758327876285 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1773282613133027267, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
   m_PrefabInstance: {fileID: 7712379355750292862}
   m_PrefabAsset: {fileID: 0}

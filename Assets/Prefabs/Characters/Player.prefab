@@ -11,6 +11,30 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: bfbe2e8b331e2cc42be1591f949c0e41, type: 2}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: dc5fd4ebd3eedce4caa46f2585e673ca, type: 2}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _weaponPrefab
+      value: 
+      objectReference: {fileID: 6775985561408066682, guid: 16b890f9730833147b6017293de51970, type: 3}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f5c7eacb921e944d8f9421806da3890, type: 2}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _handTransform
+      value: 
+      objectReference: {fileID: 1248713570584594282}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _leftHandTransform
+      value: 
+      objectReference: {fileID: 1248713570584536834}
+    - target: {fileID: 2736003811692426494, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+      propertyPath: _rightHandTransform
+      value: 
+      objectReference: {fileID: 1248713570584594282}
     - target: {fileID: 3534718815213135933, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -70,3 +94,13 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -761483115791834209, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+--- !u!4 &1248713570584536834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1773282613132953515, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+  m_PrefabInstance: {fileID: 706965379385925801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1248713570584594282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1773282613133027267, guid: 5439259c80ab5044c8144661f09fec46, type: 3}
+  m_PrefabInstance: {fileID: 706965379385925801}
+  m_PrefabAsset: {fileID: 0}

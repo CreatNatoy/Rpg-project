@@ -6,20 +6,25 @@ namespace RPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] private float _weaponRange = 2f;
+
         [SerializeField] private float _timeBetweenAttacks = 1f;
-        [SerializeField] private float _weaponDamage = 2f;
+        [SerializeField] private Transform _rightHandTransform = null;
+        [SerializeField] private Transform _leftHandTransform = null;
+        [SerializeField] private Weapon _defaultWeapon = null; 
+
         private Health _target;
-        float _timeSinceLastAttack = Mathf.Infinity; /* Ñðàçó íàíîñèë óðîí áåç çàäåðæêè */ 
+        float _timeSinceLastAttack = Mathf.Infinity; 
         private Mover _mover;
         private Animator _animator;
         private ActionScheduler _action;
+        Weapon _currentWeapon = null; 
 
         private void Start()
         {
             _mover = GetComponent<Mover>();
             _action = GetComponent<ActionScheduler>();
             _animator = GetComponent<Animator>();
+            EquipWeapon(_defaultWeapon); 
         }
 
         private void Update()
@@ -37,6 +42,13 @@ namespace RPG.Combat
                 AttackBehaviour();
             }
 
+        }
+
+        public void EquipWeapon(Weapon weapon)
+        {
+            _currentWeapon = weapon; 
+            Animator animator = GetComponent<Animator>();
+            weapon.Spawn(_rightHandTransform, _leftHandTransform, animator); 
         }
 
         private void AttackBehaviour()
@@ -59,7 +71,7 @@ namespace RPG.Combat
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, _target.transform.position) < _weaponRange;
+            return Vector3.Distance(transform.position, _target.transform.position) < _currentWeapon.GetRange();
         }
 
         public bool CanAttack(GameObject combatTarget)
@@ -88,12 +100,19 @@ namespace RPG.Combat
             _animator.SetTrigger("stopAttack");
         }
 
-        // Animation Event
         private void Hit()
         {
                 if(_target == null) {return;}
-                //Health healthComponent = _target.GetComponent<Health>();
-                _target.TakeDamage(_weaponDamage);
+
+            if (_currentWeapon.HasProjectile())
+                _currentWeapon.LaunchProjectile(_rightHandTransform, _leftHandTransform, _target);
+            else
+                _target.TakeDamage(_currentWeapon.GetGamage());
+        }
+
+        void Shoot()
+        {
+            Hit(); 
         }
     }
 }
