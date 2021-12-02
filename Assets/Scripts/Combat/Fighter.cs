@@ -1,16 +1,19 @@
 using RPG.Movement;
 using RPG.Core;
 using UnityEngine;
+using System; 
+using RPG.Saving;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour, IAction, ISaveable 
     {
 
         [SerializeField] private float _timeBetweenAttacks = 1f;
         [SerializeField] private Transform _rightHandTransform = null;
         [SerializeField] private Transform _leftHandTransform = null;
-        [SerializeField] private Weapon _defaultWeapon = null; 
+        [SerializeField] private Weapon _defaultWeapon = null;
+
 
         private Health _target;
         float _timeSinceLastAttack = Mathf.Infinity; 
@@ -24,6 +27,8 @@ namespace RPG.Combat
             _mover = GetComponent<Mover>();
             _action = GetComponent<ActionScheduler>();
             _animator = GetComponent<Animator>();
+
+            if(_currentWeapon == null)
             EquipWeapon(_defaultWeapon); 
         }
 
@@ -113,6 +118,18 @@ namespace RPG.Combat
         void Shoot()
         {
             Hit(); 
+        }
+
+        object ISaveable.CaptureState()
+        {
+            return _currentWeapon.name; 
+        }
+
+        void ISaveable.RestoreState(object state)
+        {
+            string weaponName = (string)state;
+            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            EquipWeapon(weapon);
         }
     }
 }

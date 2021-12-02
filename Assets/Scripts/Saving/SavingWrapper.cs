@@ -32,11 +32,11 @@ namespace RPG.SceneManagement
             }
         }
 
-        private void OnEnable()
+       private void OnEnable()
         {
             GetComponent<SavingSystem>().Delete(defaultSaveFile);
         }
-
+   
         public void Save()
         {
             GetComponent<SavingSystem>().Save(defaultSaveFile);

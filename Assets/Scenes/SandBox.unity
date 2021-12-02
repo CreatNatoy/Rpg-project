@@ -2635,11 +2635,15 @@ PrefabInstance:
     - target: {fileID: 6405830999471816943, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: _defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 70cc4e6888024e74aa873593290f2ca0, type: 2}
+      objectReference: {fileID: 11400000, guid: 7f5c7eacb921e944d8f9421806da3890, type: 2}
     - target: {fileID: 6405830999471816943, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: _weaponOverride
       value: 
       objectReference: {fileID: 22100000, guid: 76b5a5c2ad54ebd49b42189be9edacae, type: 2}
+    - target: {fileID: 6405830999471816943, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
+      propertyPath: _defaultWeaponName
+      value: Sword
+      objectReference: {fileID: 0}
     - target: {fileID: 8417664099050606094, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.18085289
