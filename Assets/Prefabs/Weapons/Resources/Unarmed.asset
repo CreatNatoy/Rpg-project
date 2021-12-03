@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62aeefb8f119ada4eac33cbb68064d4c, type: 3}
   m_Name: Unarmed
   m_EditorClassIdentifier: 
-  _weaponPrefab: {fileID: 0}
+  equippedPrefab: {fileID: 0}
   _animatorOverride: {fileID: 0}
   _weaponRange: 2
-  _weaponDamage: 2
+  _weaponDamage: 5
+  isRightHanded: 1
+  _projectile: {fileID: 0}
