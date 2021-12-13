@@ -2601,6 +2601,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1401332036245821552, guid: 4846fa69ef21c0247930bec96e69a42d, type: 3}
+      propertyPath: progression
+      value: 
+      objectReference: {fileID: 11400000, guid: 25b8fc333aa45124aa84bdfbda864853, type: 2}
+    - target: {fileID: 1401332036245821552, guid: 4846fa69ef21c0247930bec96e69a42d, type: 3}
+      propertyPath: startingLevel
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4723796508780304202, guid: 4846fa69ef21c0247930bec96e69a42d, type: 3}
       propertyPath: _healthPoints
       value: 100
@@ -2608,6 +2616,10 @@ PrefabInstance:
     - target: {fileID: 6666779885192034003, guid: 4846fa69ef21c0247930bec96e69a42d, type: 3}
       propertyPath: m_Name
       value: Player 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6666779885192034003, guid: 4846fa69ef21c0247930bec96e69a42d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4846fa69ef21c0247930bec96e69a42d, type: 3}
@@ -3027,6 +3039,10 @@ PrefabInstance:
     - target: {fileID: 856342786664905300, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1827304969769410151, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
+      propertyPath: uniqueIdentifier
+      value: fc7e404b-7c42-410d-b432-b824fcb85791
       objectReference: {fileID: 0}
     - target: {fileID: 5481990887562386476, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: m_LocalPosition.x

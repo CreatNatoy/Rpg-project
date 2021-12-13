@@ -1,8 +1,10 @@
 using UnityEngine;
 using RPG.Saving;
 using UnityEngine.Events;
+using RPG.Core;
+using RPG.Stats;
 
-namespace RPG.Core 
+namespace RPG.Resources
 { 
     public class Health : MonoBehaviour, ISaveable
     {
@@ -18,6 +20,7 @@ namespace RPG.Core
 
         private void Start()
         {
+            _healthPoints = GetComponent<BaseStats>().GetHealth();
             _animator = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>(); 
         }
