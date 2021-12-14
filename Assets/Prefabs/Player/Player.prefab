@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 5164170827496755040}
   - component: {fileID: 6130350220911405907}
   - component: {fileID: 1401332036245821552}
+  - component: {fileID: 7365609744277044270}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -251,6 +252,19 @@ MonoBehaviour:
   startingLevel: 1
   characterClass: 0
   progression: {fileID: 11400000, guid: 25b8fc333aa45124aa84bdfbda864853, type: 2}
+--- !u!114 &7365609744277044270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6666779885192034003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74951d5bc033ff84ca5327ff3c75e767, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiencePoints: 0
 --- !u!1001 &7774296037989794743
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ namespace RGP.Combat
         [SerializeField] private float _lifeAfterImpact = 2;
 
         private Health _target = null;
+        GameObject instigator = null;
         private float _damage = 0f;
 
         private void Start()
@@ -31,10 +32,12 @@ namespace RGP.Combat
             transform.Translate(Vector3.forward * _speed * Time.deltaTime);
         }
 
-        public void SetTarget(Health target, float damage)
+        public void SetTarget(Health target, GameObject instigator, float damage)
         {
             _target = target;
             _damage = damage;
+            this.instigator = instigator;
+            
 
             Destroy(gameObject, _maxLifeTime);
         }
@@ -51,7 +54,7 @@ namespace RGP.Combat
         {
             if (other.GetComponent<Health>() != _target) return;
             if (_target.IsDead()) return;
-            _target.TakeDamage(_damage);
+            _target.TakeDamage(instigator, _damage);
 
             _speed = 0;
 
