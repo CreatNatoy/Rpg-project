@@ -20,7 +20,7 @@ namespace RPG.Resources
 
         private void Start()
         {
-            _healthPoints = GetComponent<BaseStats>().GetHealth();
+            _healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
             _animator = GetComponent<Animator>();
             _actionScheduler = GetComponent<ActionScheduler>(); 
         }
@@ -39,7 +39,7 @@ namespace RPG.Resources
 
         public float GetPercentage()
         {
-            return 100 * (_healthPoints / GetComponent<BaseStats>().GetHealth());
+            return 100 * (_healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health));
         }
 
         public float GetHealthBar()
@@ -61,7 +61,7 @@ namespace RPG.Resources
             Experience experience = instigator.GetComponent<Experience>();
             if(experience == null) return;
             
-            experience.GainExperience(GetComponent<BaseStats>().GetExperienceReward());
+            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
         }
 
         public object CaptureState()
