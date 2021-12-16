@@ -41,3 +41,11 @@ MonoBehaviour:
     - stat: 1
       levels:
       - 20
+  - characterClass: 2
+    stats:
+    - stat: 0
+      levels:
+      - 30
+    - stat: 1
+      levels:
+      - 20

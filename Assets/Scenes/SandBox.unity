@@ -3619,6 +3619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMag
       objectReference: {fileID: 0}
+    - target: {fileID: 8703757187759821999, guid: 9b0da39835478e547b609cde982d206c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b0da39835478e547b609cde982d206c, type: 3}
 --- !u!1001 &8417664099606027545
@@ -3634,7 +3638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 261330974462581415, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 856342786664905300, guid: bb649e976896c7748b1d74a0fe0bb509, type: 3}
       propertyPath: m_UseGravity
