@@ -1,32 +1,34 @@
-Ôªøusing UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
 /**
- * Skrypt odpowiedzialny za zarzƒÖdzanie g≈Ç√≥wnym menu gry.
- * 
- * @author Hubert Paluch.
- * MViRe - na potrzeby kursu UNITY3D v5.
- * mvire.com 
+ * Skrypt odpowiedzialny za zarzπdzanie g≥Ûwnym menu gry.
  */
 public class MenuUI : MonoBehaviour {
 
 	public Canvas quitMenu;
+	public Canvas controlMenu;
 	public Button btnStart;
+	public Button btnControl;
 	public Button btnExit;
+	public Button btnControlExit;
 
 	/** Obiekt menu.*/
 	private Canvas manuUI;
 	
 	void Start (){
-		manuUI = (Canvas)GetComponent<Canvas>();//Pobranie menu g≈Ç√≥wnego.
-
-		quitMenu = quitMenu.GetComponent<Canvas>(); //Pobranie menu pytania o wyj≈õcie z gry.
+		manuUI = (Canvas)GetComponent<Canvas>();//Pobranie menu g≥Ûwnego.
+		controlMenu = controlMenu.GetComponent<Canvas>(); //Pobranie menu kontroli gry.
+		quitMenu = quitMenu.GetComponent<Canvas>();  //Pobranie menu pytania o wyjúcie z gry.
 
 		btnStart = btnStart.GetComponent<Button> ();//Ustawienie przycisku uruchomienia gry.
-		btnExit = btnExit.GetComponent<Button> ();//Ustawienie przycisku wyj≈õcia z gry.
+		btnControl = btnControl.GetComponent<Button>();//Ustawienie przycisku uruchomienia opcji.
+		btnExit = btnExit.GetComponent<Button> ();//Ustawienie przycisku wyjúcia z gry.
+		btnControlExit = btnControlExit.GetComponent<Button>();//Ustawienie przycisku wyjúcia z gry.
 
-		quitMenu.enabled = false; //Ukrycie menu z pytaniem o wyj≈õcie z gry.
+		controlMenu.enabled = false; //Ukrycie menu z kontrolowaniem.
+		quitMenu.enabled = false; //Ukrycie menu z pytaniem o wyjúcie z gry.
 
 		Time.timeScale = 0;//Zatrzymanie czasu.
 		Cursor.visible = manuUI.enabled;//Ukrycie pokazanie kursora myszy.
@@ -34,57 +36,85 @@ public class MenuUI : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyUp (KeyCode.Escape)) { //Je≈ºeli naci≈õniƒôto klawisz "Escape"
+	void Update()
+	{
+		if (Input.GetKeyUp(KeyCode.Escape))
+		{ //Jeøeli naciúniÍto klawisz "Escape"
 			manuUI.enabled = !manuUI.enabled;//Ukrycie/pokazanie menu.
 
 			Cursor.visible = manuUI.enabled;//Ukrycie pokazanie kursora myszy.
-			
-			if(manuUI.enabled) {
+
+			if (manuUI.enabled)
+			{
 				Cursor.lockState = CursorLockMode.Confined;//Odblokowanie kursora myszy.
 				Cursor.visible = true;//Pokazanie kursora.
 				Time.timeScale = 0;//Zatrzymanie czasu.
 				quitMenu.enabled = false; //Ukrycie menu pytania.
 				btnStart.enabled = true; //Aktywacja przycsiku 'Start'.
-				btnExit.enabled = true; //Aktywacja przycsiku 'Wyj≈õcie'.
-			} else {
+				btnExit.enabled = true; //Aktywacja przycsiku 'Wyjúcie'.
+			}
+			else
+			{
 				Cursor.lockState = CursorLockMode.Locked; //Zablokowanie kursora myszy.
 				Cursor.visible = false;//Ukrycie kursora.
-				Time.timeScale = 1;//W≈ÇƒÖczenie czasu.
+				Time.timeScale = 1;//W≥πczenie czasu.
 				quitMenu.enabled = false; //Ukrycie menu pytania.
 			}
-			
+
 		}
 	}
 
-	//Metoda wywo≈Çywana po naci≈õniƒôciu przycisku "Exit"
-	public void PrzyciskWyjscie() {
-		quitMenu.enabled = true; //Uaktywnienie meny z pytaniem o wyj≈õcie
+	//Metoda wywo≥ywana po naciúniÍciu przycisku "Control"
+	public void PrzyciskControl()
+	{
+		controlMenu.enabled = true; //Uaktywnienie menu control.
 		btnStart.enabled = false; //Deaktywacja przycsiku 'Start'.
-		btnExit.enabled = false; //Deaktywacja przycsiku 'Wyj≈õcie'.
+		btnControl.enabled = false; //Deaktywacja przycsiku 'Control'.
+		btnExit.enabled = false; //Deaktywacja przycsiku 'Wyjúcie'.
 	}
 
-	//Metoda wywo≈Çywana podczas udzielenia odpowiedzi przeczƒÖcej na pytanie o wyj≈õcie z gry.
-	public void PrzyciskNieWychodz(){
-		quitMenu.enabled = false; //Ukrycie menu z pytaniem o wyj≈õcie z gry.
+	//Metoda wywo≥ywana po naciúniÍciu przycisku "ExitControl"
+	public void PrzyciskExitControl()
+	{
+		controlMenu.enabled = false; //Uaktywnienie menu control.
 		btnStart.enabled = true; //Uaktywnienie przycisku 'Start'.
+		btnControl.enabled = true; //Uaktywnienie przycsiku 'Control'.
 		btnExit.enabled = true; //Uaktywnienie przycisku 'Wyjscie'.
 	}
 
-	//Metoda wywo≈Çywana przez przycisk uruchomienia gry 'Play Game'
+
+	//Metoda wywo≥ywana po naciúniÍciu przycisku "Exit"
+	public void PrzyciskWyjscie()
+	{
+		quitMenu.enabled = true; //Uaktywnienie meny z pytaniem o wyjúcie
+		btnStart.enabled = false; //Deaktywacja przycsiku 'Start'.
+		btnControl.enabled = false; //Deaktywacja przycsiku 'Control'.
+		btnExit.enabled = false; //Deaktywacja przycsiku 'Wyjúcie'.
+	}
+
+
+	//Metoda wywo≥ywana podczas udzielenia odpowiedzi przeczπcej na pytanie o wyjúcie z gry.
+	public void PrzyciskNieWychodz(){
+		quitMenu.enabled = false; //Ukrycie menu z pytaniem o wyjúcie z gry.
+		btnStart.enabled = true; //Uaktywnienie przycisku 'Start'.
+		btnControl.enabled = true; //Uaktywnienie przycsiku 'Control'.
+		btnExit.enabled = true; //Uaktywnienie przycisku 'Wyjscie'.
+	}
+
+	//Metoda wywo≥ywana przez przycisk uruchomienia gry 'Play Game'
 	public void PrzyciskStart (){
 		//Application.LoadLevel (0); //this will load our first level from our build settings. "1" is the second scene in our game	
-		manuUI.enabled = false; //Ukrycie g≈Ç√≥wnego menu.
+		manuUI.enabled = false; //Ukrycie g≥Ûwnego menu.
 
-		Time.timeScale = 1;//W≈Çaczenie czasu.
+		Time.timeScale = 1;//W≥aczenie czasu.
 
 		Cursor.visible = false;//Ukrycie kursora.
 		Cursor.lockState = CursorLockMode.Locked; //Zablokowanie kursora myszy.
 	}
 
-	//Metoda wywo≈Çywana podczas udzielenia odpowiedzi twierdzƒÖcej na pytanie o wyj≈õcie z gry.
+	//Metoda wywo≥ywana podczas udzielenia odpowiedzi twierdzπcej na pytanie o wyjúcie z gry.
 	public void PrzyciskTakWyjdz () {
-		Application.Quit(); //Powoduje wyj≈õcie z gry.
+		Application.Quit(); //Powoduje wyjúcie z gry.
 		
 	}
 }
