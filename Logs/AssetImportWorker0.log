@@ -1,37 +1,50 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.17f1 (a4537701e4ab) revision 10769271'; Using compiler version '192528614'; Build Type 'Release'
+<<<<<<< Updated upstream
 OS: 'Windows 10 Home; OS build 22483.1011; Version 2009; 64bit' Language: 'ru' Physical Memory: 16228 MB
+=======
+OS: 'Windows 10 Pro; OS build 19041.330; Version 2004; 64bit' Language: 'ru' Physical Memory: 8112 MB
+>>>>>>> Stashed changes
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Unity.exe
+D:\Progs\Unity\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Unity/Rpg-project
+C:/Users/Дмитрий/Documents/GitHub/Rpg-project 3
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 63458
 Successfully changed project path to: C:/Unity/Rpg-project
 C:/Unity/Rpg-project
 Using Asset Import Pipeline V2.
 Refreshing native plugins compatible for Editor in 39.13 ms, found 2 plugins.
+=======
+51882
+Successfully changed project path to: C:/Users/Дмитрий/Documents/GitHub/Rpg-project 3
+C:/Users/Дмитрий/Documents/GitHub/Rpg-project 3
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 92.86 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Unity/Rpg-project/Assets
+[Subsystems] Discovering subsystems at path D:/Progs/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Дмитрий/Documents/GitHub/Rpg-project 3/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce 920M (ID=0x1299)
     Vendor:   
-    VRAM:     4021 MB
-    Driver:   27.21.14.6611
+    VRAM:     2009 MB
+    Driver:   25.21.14.2531
 Initialize mono
+<<<<<<< Updated upstream
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
@@ -42,16 +55,37 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/
 Registered in 0.001905 seconds.
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 34.58 ms, found 2 plugins.
+=======
+Mono path[0] = 'D:/Progs/Unity/Editor/Data/Managed'
+Mono path[1] = 'D:/Progs/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Progs/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56672
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Progs/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001667 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 75.89 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
+Unable to find bridge dll in registry for Microsoft Visual Studio Tools for Unity for C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\devenv.exe
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Completed reload, in  2.342 seconds
 Domain Reload Profiling:
 	ReloadAssembly (2343ms)
 		BeginReloadAssembly (55ms)
+=======
+- Completed reload, in  1.612 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1613ms)
+		BeginReloadAssembly (100ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (1ms)
 		EndReloadAssembly (432ms)
 			LoadAssemblies (52ms)
@@ -67,12 +101,30 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (22ms)
 				ProcessInitializeOnLoadAttributes (87ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
+=======
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (795ms)
+			LoadAssemblies (98ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (320ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (22ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+>>>>>>> Stashed changes
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< Updated upstream
 Registered in 0.004609 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -83,10 +135,23 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (1264ms)
 		BeginReloadAssembly (142ms)
+=======
+Registered in 0.003681 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.116 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2118ms)
+		BeginReloadAssembly (271ms)
+>>>>>>> Stashed changes
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 			CreateAndSetChildDomain (18ms)
 		EndReloadAssembly (1057ms)
 			LoadAssemblies (86ms)
@@ -118,6 +183,38 @@ System memory in use after: 87.4 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2117.
 Total: 3.112100 ms (FindLiveObjects: 0.198800 ms CreateObjectMapping: 0.062400 ms MarkObjects: 2.762000 ms  DeleteObjects: 0.087600 ms)
+=======
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1737ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (557ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (90ms)
+			SetupLoadedEditorAssemblies (754ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (138ms)
+				ProcessInitializeOnLoadAttributes (592ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1677 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.0 MB.
+System memory in use after: 75.1 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2112.
+Total: 5.168200 ms (FindLiveObjects: 0.264500 ms CreateObjectMapping: 0.137200 ms MarkObjects: 4.651000 ms  DeleteObjects: 0.113600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -130,6 +227,239 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(19a00db473fb8454fa46e006be57eb51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(19a00db473fb8454fa46e006be57eb51) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The tree LowPoly - FirTree A must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree LowPoly - FirTree A must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree LowPoly - FirTree B must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree LowPoly - FirTree B must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree SM_Env_Tree_03 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree SM_Env_Bush_01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+The tree SM_Env_Grass_01 must use the Nature/Soft Occlusion shader. Otherwise billboarding/lighting will not work correctly.
+
+ -> (artifact id: 'cce06bdd1fc259f67f1252a1ce197223') in 0.114688 seconds 
+  Import took 0.119522 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.940182 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f447c75be79e5b775ad42443c5de55') in 0.002877 seconds 
+  Import took 0.007303 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.024859 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f447c75be79e5b775ad42443c5de55') in 0.002054 seconds 
+  Import took 0.006234 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009150 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  2.512 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2514ms)
+		BeginReloadAssembly (310ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (25ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (88ms)
+		EndReloadAssembly (2046ms)
+			LoadAssemblies (220ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (603ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (947ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (793ms)
+				ProcessInitializeOnLoadMethodAttributes (8ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2114 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.7 MB.
+System memory in use after: 94.2 MB.
+
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 2561.
+Total: 6.967800 ms (FindLiveObjects: 0.309300 ms CreateObjectMapping: 0.199200 ms MarkObjects: 4.926900 ms  DeleteObjects: 1.530800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 697.735469 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263ac41984a792bf586e3914a3947260') in 0.023983 seconds 
+  Import took 0.029947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.128244 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '263ac41984a792bf586e3914a3947260') in 0.003081 seconds 
+  Import took 0.011167 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.886833 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(6c3deeed52ec531468186d3074a55d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(6c3deeed52ec531468186d3074a55d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bb858db9953bcf199dac31c8fd2d9a') in 0.003044 seconds 
+  Import took 0.010236 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.310929 seconds.
+  path: Assets/Scenes/level1
+  artifactKey: Guid(9f95b41716f116747a651495cf0703c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1 using Guid(9f95b41716f116747a651495cf0703c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1977dd6b70c58e03d009d449e2f4ee13') in 0.002453 seconds 
+  Import took 0.008615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.967703 seconds.
+  path: Assets/Scenes/SandBox 2.unity
+  artifactKey: Guid(b8853fcb87f6ef549b9b442e4a21fdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SandBox 2.unity using Guid(b8853fcb87f6ef549b9b442e4a21fdfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb057c8ef25b80a025b9695ca3a6adc9') in 0.003216 seconds 
+  Import took 0.011590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.411320 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819e6687923468672e7bc27b05be18d1') in 0.002769 seconds 
+  Import took 0.009825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.286962 seconds.
+  path: Assets/Prefabs/Core/Portal.prefab
+  artifactKey: Guid(90825574dd8f082499db8f9b00e912da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Core/Portal.prefab using Guid(90825574dd8f082499db8f9b00e912da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17112e70d57c1526ea5e319e09306df4') in 0.029391 seconds 
+  Import took 0.036469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.023621 seconds.
+  path: Assets/Prefabs/Core/Portal.prefab
+  artifactKey: Guid(90825574dd8f082499db8f9b00e912da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Core/Portal.prefab using Guid(90825574dd8f082499db8f9b00e912da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17112e70d57c1526ea5e319e09306df4') in 0.005297 seconds 
+  Import took 0.010958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.235592 seconds.
+  path: Assets/Scenes/level2.unity
+  artifactKey: Guid(57f245ebf0589164a9443461ab9c3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level2.unity using Guid(57f245ebf0589164a9443461ab9c3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085e5134f0fad90b43ba740a717934a2') in 0.003786 seconds 
+  Import took 0.010389 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 150.885430 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7020288d3b95bf4c302d2a1d04d31760') in 0.002912 seconds 
+  Import took 0.010391 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006270 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.472 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2473ms)
+		BeginReloadAssembly (228ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (74ms)
+		EndReloadAssembly (2106ms)
+			LoadAssemblies (209ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (659ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (936ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (758ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.1 MB.
+System memory in use after: 94.2 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2563.
+Total: 6.974900 ms (FindLiveObjects: 0.410500 ms CreateObjectMapping: 0.302000 ms MarkObjects: 5.536800 ms  DeleteObjects: 0.723500 ms)
+>>>>>>> Stashed changes
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+<<<<<<< Updated upstream
 Received Import Request.
   path: Assets/Scenes/SandBox.unity
   artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -146,6 +476,51 @@ System memory in use after: 54.2 MB.
 
 Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2117.
 Total: 3.537100 ms (FindLiveObjects: 0.160500 ms CreateObjectMapping: 0.051800 ms MarkObjects: 3.311900 ms  DeleteObjects: 0.012100 ms)
+=======
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006211 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.192 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2193ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1906ms)
+			LoadAssemblies (163ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (551ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (913ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (121ms)
+				ProcessInitializeOnLoadAttributes (768ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (1ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.3 MB.
+System memory in use after: 94.3 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2565.
+Total: 6.730900 ms (FindLiveObjects: 0.551300 ms CreateObjectMapping: 0.310600 ms MarkObjects: 5.062400 ms  DeleteObjects: 0.803400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -157,4 +532,533 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.46 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 60.8 MB.
+System memory in use after: 52.9 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 2565.
+Total: 9.009700 ms (FindLiveObjects: 2.623600 ms CreateObjectMapping: 0.392100 ms MarkObjects: 5.180200 ms  DeleteObjects: 0.782100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 916.965325 seconds.
+  path: Assets/Scenes/level2.unity
+  artifactKey: Guid(57f245ebf0589164a9443461ab9c3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level2.unity using Guid(57f245ebf0589164a9443461ab9c3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb9ebebe8400714205e54a43483fd554') in 0.021847 seconds 
+  Import took 0.041041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.698764 seconds.
+  path: Assets/Scenes/level3.unity
+  artifactKey: Guid(521fbe45243c9c24da3747a671bf696b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level3.unity using Guid(521fbe45243c9c24da3747a671bf696b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21a27c884967e7fb8c781aecb98a426') in 0.004159 seconds 
+  Import took 0.089036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.353799 seconds.
+  path: Assets/Scenes/level1.unity
+  artifactKey: Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level1.unity using Guid(1146a8ddd0a7dba4cbcc31c863c2dac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e661644d0f4e69f3df2dfd77ae89286') in 0.003161 seconds 
+  Import took 0.069797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.659902 seconds.
+  path: Assets/Scenes/level2.unity
+  artifactKey: Guid(57f245ebf0589164a9443461ab9c3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level2.unity using Guid(57f245ebf0589164a9443461ab9c3f48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2167f15534d493216023dd0c88d319f9') in 0.003161 seconds 
+  Import took 0.077086 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.056060 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.084 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2085ms)
+		BeginReloadAssembly (169ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (59ms)
+		EndReloadAssembly (1809ms)
+			LoadAssemblies (199ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (546ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (86ms)
+			SetupLoadedEditorAssemblies (786ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (4ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (638ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 102.3 MB.
+System memory in use after: 94.4 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2567.
+Total: 5.822100 ms (FindLiveObjects: 0.271100 ms CreateObjectMapping: 0.120000 ms MarkObjects: 4.637600 ms  DeleteObjects: 0.791400 ms)
+>>>>>>> Stashed changes
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< Updated upstream
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 34.518157 seconds.
+  path: Assets/Scenes/level3.unity
+  artifactKey: Guid(521fbe45243c9c24da3747a671bf696b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/level3.unity using Guid(521fbe45243c9c24da3747a671bf696b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982fe7e52e81df98483b1b3cd394ce24') in 0.027752 seconds 
+  Import took 0.054180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.290047 seconds.
+  path: Assets/Asset Packs/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerEnd.psd
+  artifactKey: Guid(0dd3fbd5475976a4aa96298afc680d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/BOXOPHOBIC/Utils/Resources/Boxophobic - BannerEnd.psd using Guid(0dd3fbd5475976a4aa96298afc680d17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f34e31f38a3d711a0c18b74efbd4e2f9') in 0.220844 seconds 
+  Import took 0.228331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_002.tif
+  artifactKey: Guid(8fdb611f0caeb7c46a603af606bdd69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_002.tif using Guid(8fdb611f0caeb7c46a603af606bdd69a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8cabdaf02e5a08ae5aa13b8be0f6d1f') in 0.180526 seconds 
+  Import took 0.186885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Asset Packs/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/Boxophobic.SkyboxCubemapExtended.Editor.asmdef
+  artifactKey: Guid(29bc400970c5066438cbde7676418b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/BOXOPHOBIC/Skybox Cubemap Extended/Core/Editor/Boxophobic.SkyboxCubemapExtended.Editor.asmdef using Guid(29bc400970c5066438cbde7676418b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8774317e9f72d4fe13880fe5d6f35105') in 0.003601 seconds 
+  Import took 0.036402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_007.tif
+  artifactKey: Guid(7b8a3a508261d394db0d71b2c8b686cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_007.tif using Guid(7b8a3a508261d394db0d71b2c8b686cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3540c7c719a5bcacafbf32845b93343d') in 0.120843 seconds 
+  Import took 0.137677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000593 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_003.tif
+  artifactKey: Guid(80b252d38a72f93459d8b8bb35a93480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_003.tif using Guid(80b252d38a72f93459d8b8bb35a93480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa29ca390e9deb0f61cdc961023cffb') in 0.038931 seconds 
+  Import took 0.046149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_03_Convex 1.asset
+  artifactKey: Guid(ee2f3c3fea7c6994c874ac8228dace23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_03_Convex 1.asset using Guid(ee2f3c3fea7c6994c874ac8228dace23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f396fefc255ba27c28cb225ceb7b665b') in 0.313362 seconds 
+  Import took 0.344809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_07_Convex.asset
+  artifactKey: Guid(10c085bcc914b5a4c9b73ac4a6189f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_07_Convex.asset using Guid(10c085bcc914b5a4c9b73ac4a6189f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347503d032b6f63290c3ae4dcd17e36a') in 0.013794 seconds 
+  Import took 0.019106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Pleb_02_Convex.asset
+  artifactKey: Guid(9f5adc2914769ce499776cdd1708ada1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Pleb_02_Convex.asset using Guid(9f5adc2914769ce499776cdd1708ada1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e3e02ad4514c7a6dfd8f958a8702ac9') in 0.014032 seconds 
+  Import took 0.020675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Soldier_10_Convex.asset
+  artifactKey: Guid(c8dbc51a66ae1e346ae206d92820b5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Soldier_10_Convex.asset using Guid(c8dbc51a66ae1e346ae206d92820b5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '726caa17f478a48edd6fe36f6e33b40d') in 0.019070 seconds 
+  Import took 0.026305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000336 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_07_Burnt_Convex.asset
+  artifactKey: Guid(98ec74a142a3be24683e586d627dc12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_07_Burnt_Convex.asset using Guid(98ec74a142a3be24683e586d627dc12b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac218e51f5e41f3075039824092fbe02') in 0.015590 seconds 
+  Import took 0.031691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Horse_03_Convex.asset
+  artifactKey: Guid(a37fbab8c8282c44caf4ebf0b393a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Horse_03_Convex.asset using Guid(a37fbab8c8282c44caf4ebf0b393a2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dce5a3d9059d4e312a5929653f0b937') in 0.014472 seconds 
+  Import took 0.022305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Knight_04_Convex.asset
+  artifactKey: Guid(a8dc545a4b3d89443b8893e5723c8659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Knight_04_Convex.asset using Guid(a8dc545a4b3d89443b8893e5723c8659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f9509b8ecc6135df955bc606f17eff') in 0.021329 seconds 
+  Import took 0.028124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_016.tif
+  artifactKey: Guid(4291eef11238c454993416af17a67ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_016.tif using Guid(4291eef11238c454993416af17a67ec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa3c947600374fb1fc6fa8478bd4cdd') in 0.052664 seconds 
+  Import took 0.060013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_010.tif
+  artifactKey: Guid(fa3bcba57a69d7f459a3dabcd8597d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_010.tif using Guid(fa3bcba57a69d7f459a3dabcd8597d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c1a6416584496f64a015d81fa90ca94') in 0.036334 seconds 
+  Import took 0.051248 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000934 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_02_Convex 1.asset
+  artifactKey: Guid(639dbe27ffcb97d4dbf43d6dfa90f3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_02_Convex 1.asset using Guid(639dbe27ffcb97d4dbf43d6dfa90f3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cbe7aba233f52a20fc25b127b1632e4') in 0.039391 seconds 
+  Import took 0.047163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_004.tif
+  artifactKey: Guid(8094f02cfceed1147882f95d44d17a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_004.tif using Guid(8094f02cfceed1147882f95d44d17a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd134eee59e9a705f941cb2a87dba3560') in 0.051187 seconds 
+  Import took 0.059495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Fairy_House_02_Convex.asset
+  artifactKey: Guid(ee121af617e72ba4a86edf34ed06b83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Fairy_House_02_Convex.asset using Guid(ee121af617e72ba4a86edf34ed06b83c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a4e78691ab54df38184301bc396d9f') in 0.022523 seconds 
+  Import took 0.029176 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
+  path: Assets/Prefabs/Enemy/EnemyMag.prefab
+  artifactKey: Guid(9b0da39835478e547b609cde982d206c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/EnemyMag.prefab using Guid(9b0da39835478e547b609cde982d206c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b5bd594298fd9dfa30bfd1a2f0b120') in 0.579403 seconds 
+  Import took 0.594839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_012.tif
+  artifactKey: Guid(b4cd3ac8776dda74f88dd6954d05d0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_012.tif using Guid(b4cd3ac8776dda74f88dd6954d05d0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e314a94b2e145e8d3ced4183b1e0e1d0') in 0.090379 seconds 
+  Import took 0.095969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/Prefabs/Characters/Enemies/Enemy.prefab
+  artifactKey: Guid(cc645c39c7c40c545a99cce308237b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Enemies/Enemy.prefab using Guid(cc645c39c7c40c545a99cce308237b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdabd80599663cb8fd74f93486232c82') in 0.160078 seconds 
+  Import took 0.176015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Knight_02_Convex.asset
+  artifactKey: Guid(0aa3273e43bd94f4781550f69a7b786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Knight_02_Convex.asset using Guid(0aa3273e43bd94f4781550f69a7b786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ce22fa3a5ef424a90ad8c49f4dad93b') in 0.013463 seconds 
+  Import took 0.019457 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/Materials/Enemy.mat
+  artifactKey: Guid(d8f6a39710b071c4db8207f10943803a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Enemy.mat using Guid(d8f6a39710b071c4db8207f10943803a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945112b6240059217c7ef85561375ba4') in 0.366308 seconds 
+  Import took 0.372660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Asset Packs/BOXOPHOBIC/Utils/Resources/Boxophobic - CategoryEnd.psd
+  artifactKey: Guid(e1c856352cf5b9b479ddb80c85c84cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/BOXOPHOBIC/Utils/Resources/Boxophobic - CategoryEnd.psd using Guid(e1c856352cf5b9b479ddb80c85c84cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6061653e53eb9f0d15bddf9b2d332a9e') in 0.007918 seconds 
+  Import took 0.035473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000430 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_01_Convex 1.asset
+  artifactKey: Guid(2e2185749cedd814c83c7d28720d4894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_01_Convex 1.asset using Guid(2e2185749cedd814c83c7d28720d4894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23726ef73f6667f07aa061809c243a09') in 0.033629 seconds 
+  Import took 0.043922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Preset_01_Convex 2.asset
+  artifactKey: Guid(0a3125c8715471e428ce2161dead2f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Preset_01_Convex 2.asset using Guid(0a3125c8715471e428ce2161dead2f90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f49a37f415345b3061536e545533ab91') in 0.092713 seconds 
+  Import took 0.100381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_013.tif
+  artifactKey: Guid(273df10f251faee47b3dba9cf1c55db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_013.tif using Guid(273df10f251faee47b3dba9cf1c55db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4c96f31e627072e237bacd54e34f18') in 0.062394 seconds 
+  Import took 0.068867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Prefabs/Enemy/EnemyArcher.prefab
+  artifactKey: Guid(824d302cb67b90a42a8afefdff527de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/EnemyArcher.prefab using Guid(824d302cb67b90a42a8afefdff527de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6f09fe2faebcb7071fe66b38de4bed') in 0.041524 seconds 
+  Import took 0.049830 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_006.tif
+  artifactKey: Guid(8c659d8b455dba940beaddf9f1ad362d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_006.tif using Guid(8c659d8b455dba940beaddf9f1ad362d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b09b9de2351b05974294b89feead81d2') in 0.052435 seconds 
+  Import took 0.060017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/Prefabs/Enemy/EnemySword.prefab
+  artifactKey: Guid(38aa2861208ca4243a510cd0e9f1a512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy/EnemySword.prefab using Guid(38aa2861208ca4243a510cd0e9f1a512) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8e015cbea103340d9d20c1373ee3478') in 0.040371 seconds 
+  Import took 0.050185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Preset_02_Convex 2.asset
+  artifactKey: Guid(798c84fc630549a4faedbdd4e48e801d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Preset_02_Convex 2.asset using Guid(798c84fc630549a4faedbdd4e48e801d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee676a15f32150fc7fc24dee6897d0e') in 0.086256 seconds 
+  Import took 0.092378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_01_Burnt_Convex 1.asset
+  artifactKey: Guid(301aec52d6cc4d94892de68eb66dc06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_01_Burnt_Convex 1.asset using Guid(301aec52d6cc4d94892de68eb66dc06d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645941e88d1a12d5b618fd296597c3de') in 0.029916 seconds 
+  Import took 0.037151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dummy_Armour_02_Convex.asset
+  artifactKey: Guid(88f27304b92ec65499cc20887c9a75ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dummy_Armour_02_Convex.asset using Guid(88f27304b92ec65499cc20887c9a75ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4409efe3ef9b8a8eaece8a4cd728ae6') in 0.022501 seconds 
+  Import took 0.029144 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Body_Pile_01_Convex.asset
+  artifactKey: Guid(afa85ef75cf931f4cb1f3304a57e9dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Body_Pile_01_Convex.asset using Guid(afa85ef75cf931f4cb1f3304a57e9dce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d1e99642c9dc0648d6b30fdc6f791f') in 0.013880 seconds 
+  Import took 0.021864 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_03_Burnt_Convex 1.asset
+  artifactKey: Guid(8c510728114ac9c40877f83d4ecbaa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Piece_03_Burnt_Convex 1.asset using Guid(8c510728114ac9c40877f83d4ecbaa40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec0db65363ff90f02f40d873ba48003d') in 0.040545 seconds 
+  Import took 0.059036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Horse_05_Convex.asset
+  artifactKey: Guid(7afef5f2f60d4c241a87b0f497c40189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Horse_05_Convex.asset using Guid(7afef5f2f60d4c241a87b0f497c40189) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a11e2671ff0fb3bf95ec3d0bf4e72c') in 0.015396 seconds 
+  Import took 0.023589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000445 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Knight_01_Convex.asset
+  artifactKey: Guid(c767c16b7cbe7dd4a821ca6dd1f19f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Knight_01_Convex.asset using Guid(c767c16b7cbe7dd4a821ca6dd1f19f99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd71cddcbbb53f3e618fc6d6ef0dfe72') in 0.013990 seconds 
+  Import took 0.022067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_001.tif
+  artifactKey: Guid(a7b3873d91f47df45a85c9e45e487e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_001.tif using Guid(a7b3873d91f47df45a85c9e45e487e07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee81ef68eedb3b51aa18ef92ae54d03') in 0.053563 seconds 
+  Import took 0.060066 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000451 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_008.tif
+  artifactKey: Guid(9a0b7f1d71032974ba5095fc22f9b900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_008.tif using Guid(9a0b7f1d71032974ba5095fc22f9b900) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0603aa7e56b170538433701fe8c28d68') in 0.043976 seconds 
+  Import took 0.052276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_005.tif
+  artifactKey: Guid(f7c1ae3f799510d49ae9c8c82700ca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_005.tif using Guid(f7c1ae3f799510d49ae9c8c82700ca4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae651b08c25965c9b828bcf7d4626f5') in 0.038284 seconds 
+  Import took 0.045104 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Gallows_Single_01_Convex 1.asset
+  artifactKey: Guid(c321278f6793ef245af18a78c798621d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Gallows_Single_01_Convex 1.asset using Guid(c321278f6793ef245af18a78c798621d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f50d970cf12297e3a5af051e91bee44') in 0.042137 seconds 
+  Import took 0.069361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000527 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Soldier_04_Convex.asset
+  artifactKey: Guid(2479aeb2e1c4e7b4087f97b5057f13a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Soldier_04_Convex.asset using Guid(2479aeb2e1c4e7b4087f97b5057f13a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb73b92e0e333da427fcdfff7bab19ef') in 0.015755 seconds 
+  Import took 0.023984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_009.tif
+  artifactKey: Guid(bb9dff36769a2cf45814c8be6619d103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_009.tif using Guid(bb9dff36769a2cf45814c8be6619d103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38979a0905b3db500126c7642ae476bd') in 0.045845 seconds 
+  Import took 0.061592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000365 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dummy_Archery_01_Convex.asset
+  artifactKey: Guid(4d3219e18b194524ea60d21f4e84233f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dummy_Archery_01_Convex.asset using Guid(4d3219e18b194524ea60d21f4e84233f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1f3833042fa7dc0317e1ef78d9f3b34') in 0.015557 seconds 
+  Import took 0.022882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000498 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Horse_02_Convex.asset
+  artifactKey: Guid(4822a51641ec9314f94c8c1d131f738b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Dead_Horse_02_Convex.asset using Guid(4822a51641ec9314f94c8c1d131f738b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8717206f220f37fd554c02f4b697de2') in 0.012737 seconds 
+  Import took 0.031981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Debris_02_Convex 1.asset
+  artifactKey: Guid(5270eceb226ac2c4a95956b3d023208d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Destroyed_House_Debris_02_Convex 1.asset using Guid(5270eceb226ac2c4a95956b3d023208d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70255f5ce757fb05f10a7346764ab2b5') in 0.042153 seconds 
+  Import took 0.048588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_014.tif
+  artifactKey: Guid(8b0cdd732687bde4b8c4added5efdda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_014.tif using Guid(8b0cdd732687bde4b8c4added5efdda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be7f39ba317d6afc31dfb74c31daf6f') in 0.046494 seconds 
+  Import took 0.054478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_015.tif
+  artifactKey: Guid(90eb8681fa50308498c96ba6e402095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_015.tif using Guid(90eb8681fa50308498c96ba6e402095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aba85f438d35d8a6b415ab24037b4b77') in 0.044373 seconds 
+  Import took 0.065732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_011.tif
+  artifactKey: Guid(7e62c2d8a059ae243bf4a47592ccaca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Water/Content Resources/Textures/Caustics Textures/CausticsRender_011.tif using Guid(7e62c2d8a059ae243bf4a47592ccaca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9ccf52e103184e578c17dfd0deec1b') in 0.046125 seconds 
+  Import took 0.052993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Direction_Sign_01_Convex.asset
+  artifactKey: Guid(71a8fa6c50d730c44adf82fc05397cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Dima/PolygonFantasyKingdom/Models/Convex/SM_Prop_Direction_Sign_01_Convex.asset using Guid(71a8fa6c50d730c44adf82fc05397cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '162d0c7a8a34f923399be215c0c68b4c') in 0.014537 seconds 
+  Import took 0.034951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.677364 seconds.
+  path: Assets/Procedural Worlds/Gaia/Scripts/Scene Managment/Editor/GaiaSceneManagement.cs
+  artifactKey: Guid(5b6c26ae28d59c245b1b10649a2de217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Scripts/Scene Managment/Editor/GaiaSceneManagement.cs using Guid(5b6c26ae28d59c245b1b10649a2de217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c828d176b0f927387cc4c8e96ae63dc7') in 0.005345 seconds 
+  Import took 0.010478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005574 seconds.
+  path: Assets/Procedural Worlds/Gaia/Scripts/Scene Managment/Editor/GaiaSceneManagement.cs
+  artifactKey: Guid(5b6c26ae28d59c245b1b10649a2de217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Procedural Worlds/Gaia/Scripts/Scene Managment/Editor/GaiaSceneManagement.cs using Guid(5b6c26ae28d59c245b1b10649a2de217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c828d176b0f927387cc4c8e96ae63dc7') in 0.001851 seconds 
+  Import took 0.008804 seconds .
+
+>>>>>>> Stashed changes
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
