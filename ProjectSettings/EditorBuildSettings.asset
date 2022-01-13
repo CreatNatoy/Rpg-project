@@ -6,9 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Artur/Scene/MainMenu.unity
+    guid: ad278fa901c303a4d9787548ae810f94
+  - enabled: 1
+    path: Assets/Scenes/level1.unity
+    guid: 1146a8ddd0a7dba4cbcc31c863c2dac8
+  - enabled: 1
+    path: Assets/Scenes/level2.unity
+    guid: 57f245ebf0589164a9443461ab9c3f48
+  - enabled: 1
+    path: Assets/Scenes/level3.unity
+    guid: 521fbe45243c9c24da3747a671bf696b
+  - enabled: 0
     path: Assets/Scenes/SandBox.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SandBox 2.unity
     guid: b8853fcb87f6ef549b9b442e4a21fdfd
   m_configObjects: {}
